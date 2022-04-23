@@ -8,7 +8,7 @@ A collection of useful React Hooks
 
 React form hook lets you handle all that heavy lifting with just some simple lines of code, your code will be much more concise and you can validate your data and handle errors and show them back to the user with the minimum effort on our side.
 
-```
+```jsx
 import { useForm } from "react-hook-form"
 
 export default function App() {
