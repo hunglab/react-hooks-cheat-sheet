@@ -4,7 +4,7 @@ A collection of useful React Hooks
 
 ---
 
-**1.React hook form**
+### 1.React hook form
 
 React form hook lets you handle all that heavy lifting with just some simple lines of code, your code will be much more concise and you can validate your data and handle errors and show them back to the user with the minimum effort on our side.
 
@@ -38,7 +38,7 @@ export default function App() {
 }
 ```
 
-**2. useUpdateEffect**
+### 2. useUpdateEffect
 
 Sometimes in your React application you want to trigger a function only when a certain state is updated, this is basicaly useEffect only on update.
 
@@ -71,7 +71,7 @@ const Home = () => {
 }
 ```
 
-**3. useCopyToClipboard**
+### 3. useCopyToClipboard
 
 The hook returns a state and a function to update the state and also copy that state to the clipboard.
 
@@ -93,7 +93,7 @@ const App = () => {
 }
 ```
 
-**4. useLocalStorage**
+### 4. useLocalStorage
 
 Interacting with the browsers local storage could sometimes be frustrating because the localstorage can be accessed only when the component mounts, for that case you'd need to use the local storage only inside the useEffect hook, which could lead you to a messy code, that’s where the use of this hook comes in.
 
@@ -121,7 +121,7 @@ export default function App() {
 }
 ```
 
-**5. useHover**
+### 5. useHover
 
 This hook is used to know whether a specific element is hovered or not, but the usage is a bit different from the other hooks.
 
@@ -144,7 +144,7 @@ const App = () => {
 }
 ```
 
-**6. useIdle**
+### 6. useIdle
 
 This hook is used to know whether the user has gone idle or the user is active, you can pass it two arguments, first is the amount of milliseconds to pass to decide the user has gone idle and the second one is the initial state you can add true or false by default it is set to false
 
@@ -159,7 +159,7 @@ const App = () => {
 }
 ```
 
-**7. useClickAway**
+### 7. useClickAway
 
 This hook is useful when we want to trigger a function whenever we click outside of a specific UI component, for example we have an opened modal and we want to close the modal whenever the user clicks outside the modal, basically we are saying if the user clicks anywhere else which is not the modal, we want to run a function (in this case is closing th modal)
 ```
@@ -185,7 +185,7 @@ const App = () => {
 }
 ```
 
-**8. useDebounce**
+### 8. useDebounce
 
 The main use case of this hook is when we want to search some queries from an API but we don’t want to send the request everytime the user types a word, because in that case we send so many redundant requests to the API and overload the server which is not a very scalable solution.
 
@@ -215,7 +215,7 @@ const App = () => {
 }
 ```
 
-**9. useWindowSize**
+### 9. useWindowSize
 
 This hook returns the height and width of the screen and will automatically update whenever the screen size changes.
 
@@ -236,7 +236,7 @@ const App = () => {
 }
 ```
 
-**10. useSwr**
+### 10. useSwr
 
 This hook makes it easy to handle requests when mounting a component.
 
