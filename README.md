@@ -44,7 +44,7 @@ Sometimes in your React application you want to trigger a function only when a c
 
 This can be achieved without using any third-party hooks, but it can make your code just a little bit messy.
 
-```
+```jsx
 const mounted = useRef(false)
 
 useEffect(() => {
@@ -58,7 +58,7 @@ useEffect(() => {
 
 Here’s a cleaner way to do this, it is by using the react-use library which includes many other great hooks.
 
-```
+```jsx
 import { useUpdateEffect } from "react-use"
 
 const Home = () => {
@@ -75,7 +75,7 @@ const Home = () => {
 
 The hook returns a state and a function to update the state and also copy that state to the clipboard.
 
-```
+```jsx
 import { useCopyToClipboard } from "react-use"
 
 const App = () => {
@@ -101,7 +101,7 @@ The useLocalStorage hook takes 2 arguments, the first one is the key of the item
 
 The hook also returns an array of 3 Items, first is the value of that item, second is a function to update the value, the third and the last one is a function to remove that item from local storage.
 
-```
+```jsx
 import { useLocalStorage } from "react-use"
 
 export default function App() {
@@ -129,7 +129,7 @@ You pass it a JSX element and it will return an array of two items, the first on
 
 Here’s how:
 
-```
+```jsx
 import { useHover } from "react-use"
 
 const App = () => {
@@ -148,8 +148,7 @@ const App = () => {
 
 This hook is used to know whether the user has gone idle or the user is active, you can pass it two arguments, first is the amount of milliseconds to pass to decide the user has gone idle and the second one is the initial state you can add true or false by default it is set to false
 
-
-```
+```jsx
 import { useIdle } from "react-use"
 
 const App = () => {
@@ -162,7 +161,8 @@ const App = () => {
 ### 7. useClickAway
 
 This hook is useful when we want to trigger a function whenever we click outside of a specific UI component, for example we have an opened modal and we want to close the modal whenever the user clicks outside the modal, basically we are saying if the user clicks anywhere else which is not the modal, we want to run a function (in this case is closing th modal)
-```
+
+```jsx
 import { useClickAway } from "react-use"
 
 const App = () => {
@@ -191,7 +191,7 @@ The main use case of this hook is when we want to search some queries from an AP
 
 What we do instead is we wait for the user to finish typing and then we send the request, which is ideal.
 
-```
+```jsx
 import { useDebounce } from "react-use"
 
 const App = () => {
@@ -219,7 +219,7 @@ const App = () => {
 
 This hook returns the height and width of the screen and will automatically update whenever the screen size changes.
 
-```
+```jsx
 import { useWindowSize } from "react-use"
 
 const App = () => {
@@ -248,7 +248,7 @@ It will also give you a function called mutate() which you can use to refetch th
 
 This example below simply fetchs some data when the component mounts.
 
-```
+```jsx
 import useSWR from "swr"
 
 const fetcher = (url: string) => fetch(url).then((r) => r.json())
